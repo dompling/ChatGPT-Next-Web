@@ -1,5 +1,15 @@
 {
     "github": {
         "silent": true
-    }
+    },
+    "builds": [
+        {
+          "src": "package.json",
+          "use": "@vercel/static-build",
+          "config": {
+            "zeroConfig": true,
+            "allowedHosts": ["132.226.175.45"]
+          }
+        }
+    ]
 }
